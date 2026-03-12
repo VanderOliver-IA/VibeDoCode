@@ -1,0 +1,46 @@
+{
+  "name": "vibedocode",
+  "version": "1.0.0",
+  "displayName": "VibeDoCode — Facilitando o Antigravity",
+  "description": "Gerencie múltiplas contas Gmail, monitore cotas de LLMs, sincronize pastas e gerencie agentes/skills no Antigravity.",
+  "author": "VanderOliver",
+  "repository": "https://github.com/VanderOliver-IA/VibeDoCode",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "vibedocode": {
+      "command": "node",
+      "args": ["${extensionPath}/mcp-server/index.js"],
+      "env": {}
+    }
+  },
+  "commands": [
+    {
+      "name": "vibe-accounts",
+      "description": "Gerenciar múltiplas contas Gmail (listar, trocar, adicionar, remover)"
+    },
+    {
+      "name": "vibe-quota",
+      "description": "Monitor de cotas por LLM e conta Google"
+    },
+    {
+      "name": "vibe-sync",
+      "description": "Sincronizar pastas compartilhadas do workspace"
+    },
+    {
+      "name": "vibe-agent",
+      "description": "Gerenciar agentes e skills do Antigravity Kit"
+    }
+  ],
+  "settings": [
+    {
+      "key": "VIBE_VAULT_DIR",
+      "description": "Diretório do vault de credenciais por conta",
+      "default": "~/.vibedocode/vault"
+    },
+    {
+      "key": "VIBE_SYNC_PATHS",
+      "description": "Pastas a sincronizar (separadas por vírgula)",
+      "default": ""
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "vibedocode-mcp",
+  "version": "1.0.0",
+  "description": "VibeDoCode MCP Server — Tools para gestão de contas, cotas e workspace do Antigravity",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

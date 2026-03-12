@@ -1,0 +1,14 @@
+# Dependências
+mcp-server/node_modules/
+mcp-server/package-lock.json
+
+# Dados locais/sensíveis — NUNCA versionar
+*.local.*
+.vibedocode/
+
+# Logs e temporários
+*.log
+*.tmp
+__pycache__/
+*.pyc
+.DS_Store
